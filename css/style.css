@@ -1,0 +1,50 @@
+*, html {
+	font-family: courier;
+}
+
+body {
+	margin: 0;
+	margin: 0 auto;
+	width: 1024px;
+	text-align: center;
+}
+
+header h1, .country-container h1 {
+	font-size: 4rem;
+	line-height: 4rem;
+}
+
+.action-buttons {
+	margin-top: 50px;
+}
+
+.countries-wrapper {
+	height:450px;
+	overflow: auto;
+}
+.countries-wrapper > div {
+	margin-top: 10%;
+}
+.countries-table th, td {
+	padding: 5px 8px;
+}
+.countries-table th {
+	background: #D0D0D0;
+	font-weight: bold;
+}
+.countries-table tr {
+	cursor: pointer;
+	background: #EEEEFF;
+}
+.countries-table tr:nth-child(2n) {
+	background: #FFFFFF;
+}
+.countries-table tr:hover {
+	background: #AAAAAA;
+	color: #EFEFEF;
+}
+
+
+.country-img {
+	width: 15%;
+}

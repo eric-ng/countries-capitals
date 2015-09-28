@@ -1,0 +1,21 @@
+{
+  "name": "countries-capitals",
+  "version": "0.0.0",
+  "homepage": "https://github.com/eric-ng/countries-capitals",
+  "authors": [
+    "Eric Ng <eric.ng@autodesk.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.6",
+    "angular-animate": "~1.4.6",
+    "angular-route": "~1.4.6"
+  }
+}

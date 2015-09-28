@@ -1,0 +1,23 @@
+<div>
+	<div ng-if="country" class="country-container">
+		<h1>{{country.countryName}}</h1>
+		Population of Country: {{country.population | number}}<br/>
+		Area: {{country.areaInSqKm}} km<sup>2</sup><br/>
+		Capital: {{country.capital}}<br/>
+		Population of Capital: {{country.capitalInfo.population | number}}<br/>
+		{{neighbours.length}} neighbours: 
+		<a href="country/{{neighbour.countryCode}}" ng-repeat="neighbour in neighbours track by $index">{{neighbour.countryName}}, </a>
+		<br/><br/>
+		<img class="country-img" ng-src="{{country.map}}"/>
+		<img class="country-img" ng-src="{{country.flag}}"/>
+	</div>
+	<div ng-if="!country">
+		<span ng-if="!loading">There was some error loading up the data, please come back shortly.  Sorry for the inconvenience.  </span>
+		<span ng-if="loading"><img src="css/img/loading12.gif"/></span>
+	</div>
+	<div class="action-buttons">
+		<a href="home">Home</a>
+		|
+		<a href="countries">Browse Countries</a>
+	</div>
+</div>
